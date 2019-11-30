@@ -1,0 +1,144 @@
+:root {
+    --reel-height: 50px;
+    --reel-width: 30px;
+    --button-width: var(--reel-width);
+    --button-height: var(--reel-width);
+    --slot-width: 200px;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    line-height: 1;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.l-header {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+.l-main {
+    padding: 16px;
+}
+
+.c-h1 {
+    text-align: center;
+}
+
+
+.c-stop-buttons {
+    display: flex;
+    justify-content: space-around;
+    height: var(--button-height);
+    width: var(--slot-width);
+    margin: 0 auto;
+    position: relative;
+}
+
+.c-stop-button {
+    width: var(--button-width);
+    height: var(--button-height);
+    border-radius: 50%;
+    background-color: #222;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+.c-stop-button:disabled,
+.c-restart-button:disabled {
+    opacity: 0.6;
+}
+
+.c-restart-button {
+    background-color: #222;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    position: absolute;
+    right: -50px;
+    width: var(--button-width);
+    height: var(--button-height);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.c-slot {
+    display: flex;
+    justify-content: space-around;
+    height: var(--reel-height);
+    overflow: hidden;
+    width: var(--slot-width);
+    margin: 0 auto;
+}
+
+.c-slot__reel {
+    position: relative;
+    width: var(--reel-width);
+    height: var(--reel-height);
+}
+
+.c-slot__reel__text {
+    position: absolute;
+    font-size: var(--reel-height);
+    line-height: var(--reel-height);
+}
+
+.c-result-text {
+    text-align: center;
+    font-size: 40px;
+}
+
+.c-stop-buttons + .c-result-text,
+.c-result-text + .c-data-text,
+.c-data-text + .c-data-text{
+    margin-top: 16px;
+}
+
+.c-data-text {
+    text-align: center;
+}
+
+.c-slot + .c-stop-buttons {
+    margin-top: 16px;
+}
+
+.c-data-text + .c-install-button-wrap {
+    margin-top: 24px;
+}
+
+.c-install-button-wrap {
+    text-align: center;
+}
+
+.c-install-button {
+    background-color: #fff;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #eee;
+    color: #222;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 200px;
+    padding: 8px 0;
+}
+
+.is-hidden {
+    display: none;
+}

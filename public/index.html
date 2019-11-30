@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PHP SLOT</title>
+    <meta name="description" content="PHP SLOT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#2F3BA2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="PHP SLOT">
+    <link rel="apple-touch-icon" href="/img/icon-152x152.png">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/app.css">
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <header class="l-header">
+      <h1 class="c-h1">PHP SLOT</h1>
+    </header>
+    <main class="l-main">
+      <div class="c-slot">
+        <div class="c-slot__reel js-reel" data-target="1">
+          <p class="js-p c-slot__reel__text">P</p>
+          <p class="js-h c-slot__reel__text">H</p>
+        </div>
+        <div class="c-slot__reel js-reel" data-target="2">
+          <p class="js-p c-slot__reel__text">P</p>
+          <p class="js-h c-slot__reel__text">H</p>
+        </div>
+        <div class="c-slot__reel js-reel" data-target="3">
+          <p class="js-p c-slot__reel__text">P</p>
+          <p class="js-h c-slot__reel__text">H</p>
+        </div>
+      </div>
+      <div class="c-stop-buttons">
+        <button aria-label="Stop" class="js-stop c-stop-button" data-target="1"></button>
+        <button aria-label="Stop" class="js-stop c-stop-button" data-target="2"></button>
+        <button aria-label="Stop" class="js-stop c-stop-button" data-target="3"></button>
+        <button aria-label="Restart" class="js-restart c-restart-button">Re</button>
+      </div>
+      <p class="js-result is-hidden c-result-text">You are PHPer!!!</p>
+      <p class="c-data-text">
+        Total Reel Count : <span class="js-reel-count"></span>
+      </p>
+      <p class="c-data-text">
+        Total PHP Count : <span class="js-php-count"></span>
+      </p>
+      <p class="c-data-text">
+        Your Total Reel Count : <span class="js-your-reel-count"></span>
+      </p>
+      <p class="c-data-text">
+        Your PHP Count : <span class="js-your-php-count"></span>
+      </p>
+      <div class="c-install-button-wrap">
+        <button aria-label="Install"  class="js-install-button c-install-button is-hidden">Install</button>
+      </div>
+    </main>
+    <script src="https://rawgit.com/web-animations/web-animations-js/master/web-animations.min.js"></script>
+    <script src="dist/js/app.js"></script>
+  </body>
+</html>
